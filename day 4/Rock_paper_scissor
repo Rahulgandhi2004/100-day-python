@@ -1,0 +1,70 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+a=int(input("if u enter 0 means rock,1 means paper,2 means scissors\n"))
+chose=random.randint(0,3)
+print(chose)
+if chose==a:
+    print("------Equal------")
+else:
+    if chose==0 :
+        print("ROCK")
+        print(rock)
+        if a==1:
+            print("PAPER")
+            print(paper)
+            print("------WIN------")
+        elif a==2:
+            print("SCISSORS")
+            print(scissors)
+            print("------LOSE------")
+
+    elif chose==1:
+        print("PAPER")
+        print(paper)
+        if a==0:
+            print("ROCK")
+            print(rock)
+            print("------LOSE------")
+        elif a==2:
+            print("SCISSORS")
+            print(scissors)
+            print("------WIN------")
+    else:
+        print("SCISSORS")
+        print(scissors)
+        if a==0:
+            print("ROCk")
+            print(rock)
+            print("------WIN------")
+        elif a==1:
+            print("PAPER")
+            print(paper)
+            print("------LOSE------")
+
+
+
